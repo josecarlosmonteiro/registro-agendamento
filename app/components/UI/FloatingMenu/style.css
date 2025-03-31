@@ -1,0 +1,21 @@
+@keyframes fade-in-floating-menu {
+  from {
+    bottom: 0;
+    height: 0;
+  }
+}
+
+@keyframes fade-in-background-menu {
+  from {
+    opacity: 0;
+  }
+}
+
+.fade-in-menu {
+  animation: fade-in-floating-menu 300ms;
+  position: absolute;
+}
+
+.fade-in-background-menu {
+  animation: fade-in-background-menu 300ms ease;
+}

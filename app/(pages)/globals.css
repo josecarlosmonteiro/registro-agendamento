@@ -10,7 +10,6 @@ button {
 
 input,
 button {
-  border-radius: 0.5em;
   transition-duration: 200ms;
 }
 
