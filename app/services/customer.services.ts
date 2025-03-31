@@ -11,8 +11,11 @@ const createCustomer: TCreateCustomerService = async (params) => {
   console.log(params);
 
   return {
-    ...params.customer,
-    id: 'id-criado-agora',
+    content: {
+      ...params.customer,
+      id: 'id-criado-agora',
+    },
+    success: true,
   };
 }
 

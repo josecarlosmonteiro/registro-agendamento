@@ -1,3 +1,4 @@
+import { TApiResponse } from "../api/api.models";
 import { ICustomer } from "./customer.models";
 
 export type TCreateCustomerParams = {
@@ -5,4 +6,6 @@ export type TCreateCustomerParams = {
 }
 
 export type TListCustomersService = () => Promise<ICustomer[]>;
-export type TCreateCustomerService = (params: TCreateCustomerParams) => Promise<ICustomer>;
+export type TCreateCustomerService = (params: TCreateCustomerParams) => TApiResponse<ICustomer>;
+
+export type TCreateCustomerUseCase = (params: TCreateCustomerParams) => Promise<ICustomer | null>;
