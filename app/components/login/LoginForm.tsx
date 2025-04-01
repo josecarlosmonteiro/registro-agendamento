@@ -16,7 +16,7 @@ export function LoginForm({ submitFunction }: Props) {
       </div>
 
       <button
-        className="p-2 rounded-lg bg-violet-800 text-white duration-200"
+        className="p-2 rounded-lg bg-indigo-800 text-white duration-200"
         type="submit"
       >
         acessar

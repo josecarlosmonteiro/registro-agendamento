@@ -1,7 +1,6 @@
 @keyframes fade-in-floating-menu {
   from {
     bottom: 0;
-    height: 0;
   }
 }
 
