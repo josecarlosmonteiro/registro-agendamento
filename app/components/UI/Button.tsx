@@ -1,6 +1,6 @@
 import { ButtonHTMLAttributes } from "react";
 
-type TVariant = "primary";
+type TVariant = "primary" | "secondary";
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: TVariant;
@@ -8,7 +8,8 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export function Button({ variant = 'primary', className, ...rest }: Props) {
   const variantStyles: Record<TVariant, string> = {
-    primary: 'bg-primary text-white hover:bg-primary-light'
+    primary: 'bg-primary text-white hover:bg-primary-light',
+    secondary: 'bg-primary-light text-white hover:bg-primary-light/60',
   }
 
   return (

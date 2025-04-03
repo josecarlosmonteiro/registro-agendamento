@@ -13,6 +13,8 @@ export const createService = async (data: FormData) => {
 
   if (!name || !value) throw new Error("Por favor, informe todos os parâmetros.");
 
+  console.log({ name, value });
+
   const response = await servicingServices.create({ newService: { name, value } });
 
   return response;

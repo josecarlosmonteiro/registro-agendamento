@@ -1,0 +1,14 @@
+{
+  "services": [
+    {
+      "id": "e666",
+      "name": "Aplicação - unhas em gel",
+      "value": 120
+    },
+    {
+      "id": "f4a6",
+      "name": "manutenção - unhas em gel",
+      "value": 90
+    }
+  ]
+}
