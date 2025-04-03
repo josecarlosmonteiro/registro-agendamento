@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: var(--color-indigo-900);
+  --color-primary-light: var(--color-indigo-700);
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -15,5 +20,5 @@ button {
 }
 
 input:focus {
-  @apply outline-violet-800;
+  @apply outline-primary-light;
 }
