@@ -4,9 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import './index.css';
 
-const FloatingLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
+const FloatingLink = ({ href, onClick, children }: { href: string; onClick: VoidFunction; children: React.ReactNode }) => {
   return (
-    <Link href={href}>
+    <Link href={href} onClick={onClick}>
       <div className="p-2 px-4 bg-primary-light text-white rounded-lg shadow">
         {children}
       </div>
@@ -29,7 +29,13 @@ export function FloatingNavigation() {
         <div className="flex flex-col items-end gap-2 relative fade-in">
           {
             floatingLinks.map(link => (
-              <FloatingLink key={link.href} href={link.href}>{link.label}</FloatingLink>
+              <FloatingLink
+                key={link.href}
+                href={link.href}
+                onClick={() => setShowLinks(false)}
+              >
+                {link.label}
+              </FloatingLink>
             ))
           }
         </div>
