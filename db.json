@@ -14,6 +14,33 @@
       "id": "759e",
       "name": "Remoção - unhas em gel",
       "value": 100
+    },
+    {
+      "id": "695b",
+      "name": "Corte de cabelo",
+      "value": 14
+    },
+    {
+      "id": "4786",
+      "name": "outro teste",
+      "value": 1231
+    }
+  ],
+  "customers": [
+    {
+      "id": "5c5e",
+      "name": "Maria da Silva",
+      "phone": "81999558845"
+    },
+    {
+      "id": "3ef4",
+      "name": "José da Silva",
+      "phone": "81988554678"
+    },
+    {
+      "id": "a958",
+      "name": "Josefa Araújo",
+      "phone": "81935438059"
     }
   ]
 }

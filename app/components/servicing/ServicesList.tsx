@@ -1,4 +1,4 @@
-import { IService } from "@/app/types/servicing/servicing.models"
+import { IService } from "@/app/domain/servicing/servicing.models"
 import { currency } from "@/app/utils/formats";
 
 type Props = {

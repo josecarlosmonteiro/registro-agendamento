@@ -1,28 +1,20 @@
-import { createService, fetchServices } from "./actions"
 import { CreateService } from "@/app/components/servicing/CreateService";
+import { serviceRepository } from "@/app/data/repositories/servicing.repository"
+import { axiosClient } from "@/app/infrastructure/axios-client/axios-client"
+import { createServiceAction } from "./actions";
 import { ServicesList } from "@/app/components/servicing/ServicesList";
-import { Suspense } from "react";
 
 export default async function ServicesPage() {
-  const serviceListData = await fetchServices();
-
-  const onCreateService = async (data: FormData) => {
-    'use server'
-    await createService(data);
-  }
+  const allServices = await serviceRepository(axiosClient).findAll();
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="flex justify-between items-center bg-primary">
-        <h1 className="p-4 text-xl font-extralight text-white">Seus Serviços</h1>
-        <CreateService submitServiceAction={onCreateService} />
-      </div>
+    <div className="p-4 flex flex-col gap-4">
+      <h1>Serviços</h1>
+      <hr />
 
-      <div className="p-4">
-        <Suspense fallback={<div className="w-full text-center font-semibold text-gray-400 text-sm">Carregando lista de serviços...</div>}>
-          <ServicesList services={serviceListData} />
-        </Suspense>
-      </div>
+      <CreateService submitServiceAction={createServiceAction} />
+
+      <ServicesList services={allServices} />
     </div>
   )
 }

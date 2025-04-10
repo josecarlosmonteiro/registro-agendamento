@@ -1,4 +1,4 @@
-import { FloatingNavigation } from "@/app/components/FloatingNavigation";
+import { FloatingNavigation } from "@/app/components/UI/FloatingNavigation";
 
 export default function HomePage() {
   return (

@@ -18,8 +18,8 @@ export function CreateService({ submitServiceAction }: Props) {
   }
 
   return (
-    <div className="p-4">
-      <Button className="bg-primary-light" type="button" onClick={() => setShowForm(true)}>
+    <div className="flex flex-col">
+      <Button className="bg-primary-light text-white" type="button" onClick={() => setShowForm(true)}>
         Adicionar serviço
       </Button>
 

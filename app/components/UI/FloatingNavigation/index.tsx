@@ -16,6 +16,7 @@ const FloatingLink = ({ href, onClick, children }: { href: string; onClick: Void
 
 const floatingLinks: Array<{ href: string; label: string }> = [
   { href: '/inicio', label: 'Início' },
+  { href: '/clientes', label: 'Clientes' },
   { href: '/servicos', label: 'Serviços' },
 ];
 
