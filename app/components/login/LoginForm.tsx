@@ -1,3 +1,5 @@
+import { Button } from "../UI/Button";
+
 type Props = {
   submitFunction: (formData: FormData) => void;
 }
@@ -15,12 +17,9 @@ export function LoginForm({ submitFunction }: Props) {
         <input className="border rounded-lg p-1 duration-200" type="password" name="password" required />
       </div>
 
-      <button
-        className="p-2 rounded-lg bg-violet-800 text-white duration-200"
-        type="submit"
-      >
+      <Button type="submit">
         acessar
-      </button>
+      </Button>
     </form>
   )
 }
