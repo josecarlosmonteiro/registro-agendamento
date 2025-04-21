@@ -8,12 +8,13 @@ type Props = {
 export function SchedulingCard({ scheduling }: Props) {
   return (
     <div className="p-4 rounded-lg shadow bg-gray-100">
-      <h2 className="text-xl text-primary-light">{scheduling.customerName}</h2>
 
       <div className="flex justify-between items-center">
-        <div>{scheduling.serviceName}</div>
-        <div className="text-sm">{localeDate(scheduling.date)}</div>
+        <h2 className="text-xl text-primary-light">{scheduling.serviceName}</h2>
+        <div>{scheduling.customerName}</div>
       </div>
+
+      <div className="text-sm">{localeDate(scheduling.date)}</div>
     </div>
   )
 }
