@@ -1,46 +1,32 @@
 {
   "services": [
     {
-      "id": "e666",
-      "name": "Aplicação - unhas em gel",
+      "id": "eed6",
+      "name": "Corte degradê simples",
+      "value": 12
+    },
+    {
+      "id": "a2c7",
+      "name": "Corte americano",
+      "value": 12
+    },
+    {
+      "id": "71f2",
+      "name": "Barba",
+      "value": 8
+    },
+    {
+      "id": "b217",
+      "name": "Corte + barba",
       "value": 120
-    },
-    {
-      "id": "f4a6",
-      "name": "manutenção - unhas em gel",
-      "value": 90
-    },
-    {
-      "id": "759e",
-      "name": "Remoção - unhas em gel",
-      "value": 100
-    },
-    {
-      "id": "695b",
-      "name": "Corte de cabelo",
-      "value": 14
-    },
-    {
-      "id": "4786",
-      "name": "outro teste",
-      "value": 1231
     }
   ],
   "customers": [
     {
-      "id": "5c5e",
-      "name": "Maria da Silva",
-      "phone": "81999558845"
-    },
-    {
-      "id": "3ef4",
-      "name": "José da Silva",
-      "phone": "81988554678"
-    },
-    {
-      "id": "a958",
-      "name": "Josefa Araújo",
-      "phone": "81935438059"
+      "id": "a70a",
+      "name": "Carlos Monteiro",
+      "phone": "81991371375"
     }
-  ]
+  ],
+  "schedules": []
 }
