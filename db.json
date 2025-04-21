@@ -16,9 +16,9 @@
       "value": 8
     },
     {
-      "id": "b217",
-      "name": "Corte + barba",
-      "value": 120
+      "id": "457e",
+      "name": "corte + barba",
+      "value": 18
     }
   ],
   "customers": [
@@ -28,5 +28,13 @@
       "phone": "81991371375"
     }
   ],
-  "schedules": []
+  "schedules": [
+    {
+      "id": "3283",
+      "date": "2020-05-10T10:00",
+      "status": 1,
+      "customerId": "a70a",
+      "serviceId": "457e"
+    }
+  ]
 }

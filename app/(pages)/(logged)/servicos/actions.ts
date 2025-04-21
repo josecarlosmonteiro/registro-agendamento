@@ -1,4 +1,6 @@
-'use server'
+'use server';
+
+import { RemoveServiceUseCase } from './../../../data/use-cases/servicing/remove-service.usecase';
 
 import { repositories } from "@/app/data/repositories";
 import { serviceRepository } from "@/app/data/repositories/servicing.repository";
@@ -19,4 +21,9 @@ export async function createServiceAction(data: FormData) {
   }
 
   await serviceRepository(axiosClient).create(payload);
+}
+
+export async function removeService(serviceId: string) {
+  const removeService = new RemoveServiceUseCase(repositories.serviceRepository);
+  await removeService.execute(serviceId);
 }

@@ -1,7 +1,7 @@
 import { CreateService } from "@/app/components/servicing/CreateService";
 import { serviceRepository } from "@/app/data/repositories/servicing.repository"
 import { axiosClient } from "@/app/infrastructure/axios-client/axios-client"
-import { createServiceAction } from "./actions";
+import { createServiceAction, removeService } from "./actions";
 import { ServicesList } from "@/app/components/servicing/ServicesList";
 
 export default async function ServicesPage() {
@@ -14,7 +14,10 @@ export default async function ServicesPage() {
 
       <CreateService submitServiceAction={createServiceAction} />
 
-      <ServicesList services={allServices} />
+      <ServicesList
+        services={allServices}
+        removeService={removeService}
+      />
     </div>
   )
 }

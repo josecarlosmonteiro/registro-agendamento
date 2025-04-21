@@ -24,6 +24,10 @@ export class ServicingRepository implements IServiceRepository {
     const response = await this.httpClient.request('POST', '/services', data);
     return response.data;
   }
+
+  async remove(id: IService["id"]): Promise<void> {
+    await this.httpClient.request('DELETE', `/services/${id}`);
+  }
 }
 
 export const serviceRepository = (api: IHttpClient) => new ServicingRepository(api);

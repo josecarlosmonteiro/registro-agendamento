@@ -13,6 +13,7 @@ export interface IServiceRepository {
   findById(id: string): Promise<IService | null>;
   findByName(name: string): Promise<IService | null>;
   create(newService: Omit<IService, 'id'>): Promise<IService | null>;
+  remove(id: IService['id']): Promise<void>;
 }
 
 export interface ICreateServiceUseCase {

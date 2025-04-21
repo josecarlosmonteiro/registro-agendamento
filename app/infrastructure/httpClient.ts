@@ -3,7 +3,7 @@ export type THttpResponse<T = any> = {
   notification?: string;
 };
 
-export type THttpMethod = 'GET' | 'POST';
+export type THttpMethod = 'GET' | 'POST' | "DELETE";
 
 export interface IHttpClient<T = any> {
   request(method: THttpMethod, url: string, body?: any): Promise<THttpResponse<T>>;
